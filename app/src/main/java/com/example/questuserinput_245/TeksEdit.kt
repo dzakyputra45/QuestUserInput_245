@@ -94,6 +94,15 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
         ) {
             Text(stringResource(R.string.submit))
         }
+
+        HorizontalDivider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium),
+                top = dimensionResource(R.dimen.padding_medium)
+            ),
+            thickness = dimensionResource(R.dimen.padding_tipis),
+            color = Color.DarkGray
+        )
     }
 
 
