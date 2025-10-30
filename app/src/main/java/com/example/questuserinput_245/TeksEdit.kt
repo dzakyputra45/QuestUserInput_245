@@ -63,6 +63,16 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 }
             }
         }
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier.width(250.dp),
+            label = { Text(text = "Alamat Lengkap") },
+            onValueChange = { textAlamat = it }
+        )
     }
 
 
