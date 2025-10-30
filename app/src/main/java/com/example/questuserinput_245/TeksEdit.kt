@@ -19,10 +19,5 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
     var textAlamat by remember { mutableStateOf("") }
     var textjk by remember { mutableStateOf("") }
 
-    // Output states
-    var nama by remember { mutableStateOf("") }
-    var alamat by remember { mutableStateOf("") }
-    var jenis by remember { mutableStateOf("") }
-
     }
 
