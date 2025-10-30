@@ -41,6 +41,10 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
             label = { Text(text = "Nama Lengkap") },
             onValueChange = { textNama = it }
         )
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+
     }
 
 
