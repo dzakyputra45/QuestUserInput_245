@@ -153,15 +153,6 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            HorizontalDivider(
-                modifier = Modifier.padding(
-                    bottom = dimensionResource(R.dimen.padding_medium),
-                    top = dimensionResource(R.dimen.padding_medium)
-                ),
-                thickness = dimensionResource(R.dimen.padding_tipis),
-                color = Color.DarkGray
-            )
-
             Button(
                 modifier = Modifier.fillMaxWidth(0.8f),
                 enabled = textAlamat.isNotEmpty(),
