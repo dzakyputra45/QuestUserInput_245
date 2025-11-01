@@ -1,5 +1,6 @@
 package com.example.questuserinput_245
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -7,10 +8,14 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun FormatDataDiri(modifier: Modifier = Modifier) {
@@ -20,12 +25,12 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
     var textAlamat by remember { mutableStateOf("") }
     var textjk by remember { mutableStateOf("") }
 
-    // Output states
+
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
 
-    val gender = listOf("Laki-laki", "Perempuan")
+    val genderOption = listOf("Laki-laki", "Perempuan")
     val statusOptions = listOf("Janda", "Lajang", "Duda")
 
     Card(
@@ -37,10 +42,23 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
         colors = CardDefaults.cardColors(containerColor = Color(0xFFF6F6F6)) // warna lembut abu muda
     ) {
         Column(
-            modifier = modifier.padding(top = 50.dp),
-            verticalArrangement = Arrangement.Top,
+            modifier = modifier
+                .fillMaxWidth()
+                .padding(top = 50.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp))
+                    .background(Color.Cyan)
+                    .padding(vertical = 14.dp),
+                textAlign = TextAlign.Center
+            )
 
             OutlinedTextField(
                 value = textNama,
@@ -54,7 +72,7 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(12.dp))
 
             Row {
-                gender.forEach { item ->
+                genderOption.forEach { item ->
                     Row(
                         modifier = Modifier
                             .selectable(
