@@ -133,6 +133,16 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 }
             }
 
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text(
+                text = "ALAMAT",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
+
             OutlinedTextField(
                 value = textAlamat,
                 singleLine = true,
