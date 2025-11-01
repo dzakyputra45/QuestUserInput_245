@@ -60,6 +60,8 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 textAlign = TextAlign.Center
             )
 
+            Spacer(modifier = Modifier.height(20.dp))
+
             OutlinedTextField(
                 value = textNama,
                 singleLine = true,
