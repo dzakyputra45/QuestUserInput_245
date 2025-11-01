@@ -62,13 +62,19 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(20.dp))
 
+            Text(
+                text = "NAMA LENGKAP",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
             OutlinedTextField(
-                value = textNama,
+                value = nama,
+                onValueChange = { nama = it },
+                label = { Text("Isian nama lengkap") },
                 singleLine = true,
-                shape = MaterialTheme.shapes.large,
-                modifier = Modifier.width(250.dp),
-                label = { Text(text = "Nama Lengkap") },
-                onValueChange = { textNama = it }
+                modifier = Modifier.width(350.dp)
             )
 
             Spacer(modifier = Modifier.height(12.dp))
