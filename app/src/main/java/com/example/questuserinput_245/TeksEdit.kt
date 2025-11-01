@@ -87,23 +87,21 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier.align(Alignment.Start)
             )
 
-            Row {
-                genderOption.forEach { item ->
-                    Row(
-                        modifier = Modifier
-                            .selectable(
-                                selected = textjk == item,
-                                onClick = { textjk = item }
-                            )
-                            .padding(end = 8.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        RadioButton(
+            genderOption.forEach { item ->
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .selectable(
                             selected = textjk == item,
                             onClick = { textjk = item }
                         )
-                        Text(item)
-                    }
+                        .padding(vertical = 4.dp)
+                ) {
+                    RadioButton(
+                        selected = textjk == item,
+                        onClick = { textjk = item }
+                    )
+                    Text(text = item)
                 }
             }
 
