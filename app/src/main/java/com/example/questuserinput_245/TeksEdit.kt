@@ -77,7 +77,7 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier.width(350.dp)
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(20.dp))
 
             Text(
                 text = "JENIS KELAMIN",
@@ -105,7 +105,7 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 }
             }
 
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(20.dp))
 
             OutlinedTextField(
                 value = textAlamat,
