@@ -115,7 +115,7 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier.align(Alignment.Start)
             )
 
-            genderOption.forEach { item ->
+            statusOptions.forEach { item ->
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier
