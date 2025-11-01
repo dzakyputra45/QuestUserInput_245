@@ -55,7 +55,7 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp))
-                    .background(Color.Cyan)
+                    .background(Color.DarkGray)
                     .padding(vertical = 14.dp),
                 textAlign = TextAlign.Center
             )
