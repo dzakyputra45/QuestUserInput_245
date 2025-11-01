@@ -79,6 +79,14 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(12.dp))
 
+            Text(
+                text = "JENIS KELAMIN",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
+
             Row {
                 genderOption.forEach { item ->
                     Row(
