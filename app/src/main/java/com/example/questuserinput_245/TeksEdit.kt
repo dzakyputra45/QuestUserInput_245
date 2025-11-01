@@ -115,6 +115,24 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier.align(Alignment.Start)
             )
 
+            genderOption.forEach { item ->
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .selectable(
+                            selected = textjk == item,
+                            onClick = { textjk = item }
+                        )
+                        .padding(vertical = 4.dp)
+                ) {
+                    RadioButton(
+                        selected = textjk == item,
+                        onClick = { textjk = item }
+                    )
+                    Text(text = item)
+                }
+            }
+
             OutlinedTextField(
                 value = textAlamat,
                 singleLine = true,
