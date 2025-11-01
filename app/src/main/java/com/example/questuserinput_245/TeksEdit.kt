@@ -107,6 +107,14 @@ fun FormatDataDiri(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(20.dp))
 
+            Text(
+                text = "STATUS PERKAWINAN",
+                fontWeight = FontWeight.Bold,
+                fontSize = 15.sp,
+                color = Color.DarkGray,
+                modifier = Modifier.align(Alignment.Start)
+            )
+
             OutlinedTextField(
                 value = textAlamat,
                 singleLine = true,
